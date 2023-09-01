@@ -12,7 +12,7 @@ public class KeyboardInput implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
-
+        int key = e.getKeyCode();
     }
 
     @Override
@@ -47,6 +47,10 @@ public class KeyboardInput implements KeyListener {
         }
         if (key == KeyEvent.VK_D) {
             this.player.setMoveRight(false);
+        }
+
+        if (key == KeyEvent.VK_SPACE) {
+            player.setLick(true);
         }
     }
 }

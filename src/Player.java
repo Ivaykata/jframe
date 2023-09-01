@@ -15,7 +15,9 @@ public class Player {
     private boolean moveRight;
 
     private GamePanel panel;
-    private BufferedImage playerImage;
+    private final BufferedImage playerImage;
+
+    private boolean lick;
 
     public Player(int x, int y) throws IOException {
         this.x = x;
@@ -23,8 +25,10 @@ public class Player {
         this.weight = 40;
         this.height = 40;
         this.plSpeed = 1;
+        this.lick = false;
 
         this.playerImage = ImageIO.read(new File("resources/images/player_sprite.png"));
+
         }
 
     public int getX() {
@@ -109,5 +113,13 @@ public class Player {
 
     public BufferedImage getPlayerImage() {
         return playerImage;
+    }
+
+    public boolean isLick() {
+        return lick;
+    }
+
+    public void setLick(boolean lick) {
+        this.lick = lick;
     }
 }

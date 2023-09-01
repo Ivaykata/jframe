@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 public class GameWindow extends JFrame{
     public GameWindow(GamePanel gamePanel) {
 
+        //makees the screan
         setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
