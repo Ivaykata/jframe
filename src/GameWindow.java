@@ -9,7 +9,6 @@ public class GameWindow extends JFrame{
         setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-//        JFrame.add(new JLabel(new ImageIcon("Desktop/resource-view.png")));
          gamePanel.setBackground(new Color(26,29,36));
         System.out.println(getBackground());
         add(gamePanel);
